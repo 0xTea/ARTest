@@ -31,9 +31,14 @@ class ViewController: UIViewController ,ARSCNViewDelegate {
         
         // Create a SceneKit plane to visualize the node using its position and extent.
         let plane = SCNPlane(width: CGFloat(planeAnchor.extent.x), height: CGFloat(planeAnchor.extent.z))
+        var material = SCNMaterial()
+        let img = UIImage(named:"tron_grid.png");
+        material.diffuse.contents = img;
+        plane.materials = [material]
         let planeNode = SCNNode(geometry: plane)
         planeNode.position = SCNVector3Make(planeAnchor.center.x, 0, planeAnchor.center.z)
        let groundShape = SCNPhysicsShape(geometry: plane, options: nil)
+        
         // SCNPlanes are vertically oriented in their local coordinate space.
         // Rotate it to match the horizontal orientation of the ARPlaneAnchor.
         planeNode.transform = SCNMatrix4MakeRotation(-Float.pi / 2, 1, 0, 0)

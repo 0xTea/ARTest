@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A32456751F03B75D0091E92B /* Media.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A32456741F03B75D0091E92B /* Media.scnassets */; };
+		A34364521F03CC1000056D3D /* tron_grid.png in Resources */ = {isa = PBXBuildFile; fileRef = A34364511F03CC1000056D3D /* tron_grid.png */; };
 		A3B272F91F02531100D549CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B272F81F02531100D549CD /* AppDelegate.swift */; };
 		A3B272FB1F02531100D549CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B272FA1F02531100D549CD /* ViewController.swift */; };
 		A3B272FE1F02531100D549CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B272FC1F02531100D549CD /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		A32456741F03B75D0091E92B /* Media.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Media.scnassets; sourceTree = "<group>"; };
+		A34364511F03CC1000056D3D /* tron_grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tron_grid.png; path = ../../Desktop/tron_grid.png; sourceTree = "<group>"; };
 		A3B272F51F02531100D549CD /* ARtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B272F81F02531100D549CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3B272FA1F02531100D549CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				A3B273271F02600E00D549CD /* Atoms.swift */,
 				A3B273261F02600E00D549CD /* Molecules.swift */,
 				A3B272FA1F02531100D549CD /* ViewController.swift */,
+				A34364511F03CC1000056D3D /* tron_grid.png */,
 				A3B272FC1F02531100D549CD /* Main.storyboard */,
 				A3B272FF1F02531100D549CD /* Assets.xcassets */,
 				A3B273011F02531200D549CD /* LaunchScreen.storyboard */,
@@ -250,6 +253,7 @@
 				A3B273001F02531100D549CD /* Assets.xcassets in Resources */,
 				A3B272FE1F02531100D549CD /* Main.storyboard in Resources */,
 				A32456751F03B75D0091E92B /* Media.scnassets in Resources */,
+				A34364521F03CC1000056D3D /* tron_grid.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
