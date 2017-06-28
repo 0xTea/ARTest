@@ -20,12 +20,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UE6-sx-Irp">
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" wantsMultisampling="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UE6-sx-Irp">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UE6-sx-Irp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HYw-0v-De4"/>
+                            <constraint firstItem="UE6-sx-Irp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Mzf-kZ-qlg"/>
+                            <constraint firstItem="UE6-sx-Irp" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="NT0-mN-PDf"/>
+                            <constraint firstAttribute="trailing" secondItem="UE6-sx-Irp" secondAttribute="trailing" id="qT6-UW-rvG"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="sceneView" destination="UE6-sx-Irp" id="ZZF-ow-ZXr"/>
@@ -33,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="123.68815592203899"/>
+            <point key="canvasLocation" x="112.8" y="120.08995502248877"/>
         </scene>
     </scenes>
 </document>
