@@ -9,6 +9,7 @@
 import UIKit
 import SceneKit
 import ARKit
+import AudioKit
 
 class ViewController: UIViewController ,ARSCNViewDelegate {
     var carbon: SCNNode!
@@ -76,6 +77,20 @@ class ViewController: UIViewController ,ARSCNViewDelegate {
         super.viewDidLoad()
         sceneView.delegate = self
         setupscene()
+        
+        let mic = AKMicrophone()
+        
+        fft = AKFFTTap(mic)
+        
+        amplitudeTracker = AKAmplitudeTracker(mic)
+        
+        // Turn the volume all the way down on the output of amplitude tracker
+        let noAudioOutput = AKMixer(amplitudeTracker)
+        noAudioOutput.volume = 0
+        
+        AudioKit.output = noAudioOutput
+        AudioKit.start()
+        
         
         // Do any additional setup after loading the view, typically from a nib.
     }
